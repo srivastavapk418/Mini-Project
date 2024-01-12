@@ -1,0 +1,33 @@
+/* min-width,max-width */
+/* min-height,max-height*/
+/* display */
+/* overflow,visibility,cursor,background-image */
+/* limit for big screen
+max-width:1920px;
+margin:0 auto; */
+/* text-overflow:ellipsis; */
+/* overflow:(hidden,scroll,auto)  - auto gives scrollbar when content cross the limit while scroll always show scroll if content is under the limit also */
+/* overflow-x,overflow-y */
+/* display:(flex,none,block,inline,inline-block,hidden,grid,table) */
+/* display:none, visibility:(hidden,visible)  */
+/* ~ check it from hamburger menu */
+/* display:inline-block  - is used to add margin because in inline element margin will not work */
+/* 
+for drop down menu----
+
+~ MEAN (adjacent siblings)
+
+<span>.....</span>
+<h2>.......</h2>
+h2 ~ span{
+     this will not work
+}
+span ~ h2{
+    color:red;
+}
+
+
+span > h2 {
+  span ke andar direct child h2 chahe jitne ho sakte hai. 
+}
+*/
