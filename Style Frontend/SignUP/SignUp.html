@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp02</title>
+    <style>
+        .outerDiv {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;           
+        }
+        form:hover {
+            border: 2px solid blue;
+        }
+        form {
+            border: 2px solid #bbb;
+            height: 500px;
+            width: 400px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 0px 20px rgba(0, 3, 35, 20);
+        }
+        input {
+            height: 22px;
+            width: 280px;
+            margin-top: 1px;
+            padding: 0 5px; 
+            border: 0.1px solid grey;
+            border-bottom: 1px solid black;
+            border-radius: 4px;    
+
+        }
+        button {
+            height: 34px;
+            width: 150px;
+            margin-top: 30px;
+            background-color: #000;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+
+        }
+        /* .dob {
+           
+            font-size: 15px;
+            font-family: sans-serif;
+            text-align: left;
+            margin-left: 54px;
+            border: 1px solid #666;
+            width: 90px;
+            color: #777;
+            height: 16px;
+            padding: 4px 5px;
+
+
+        }
+        .dob2{
+            height: 25px;
+            width: 130px; 
+            
+        }*/
+            
+
+        
+        ::placeholder {
+            border: none;
+            
+        }
+        .innerDiv {
+            text-align: left;
+            margin-left: 45px;
+            margin-bottom: -6px;
+            /* gap: 50px; */
+            
+        }
+        label {
+            font-size: 10px;
+            margin-left: 5px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outerDiv">
+        <form action="https://www.google.com" id="form"><h2>SignUp</h2>
+        <div class="innerDiv"><label for="first name">First Name</label><br>
+        <input type="text" id="firstName" placeholder="First Name" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Last Name</label><br>
+        <input type="text" id="lastName" placeholder="Last Name" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Phone Number</label><br>
+        <input class="number" type="number" id="number" placeholder="Phone Number" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Email</label><br>
+        <input type="email" placeholder="Email" id="email" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Password</label><br>
+        <input type="password" placeholder="Create Password" id="password" required="required"></div><br>
+        <div><span style="font-size: small;" >Already a member?</span>  <a href="../Login/Login_Page02.html" style="font-style: bold; font-family: serif;">Log In</a></span></div>
+        <button type="submit" onclick="mynum()">Submit</button><br>
+    </form>  
+    </div>
+</body>
+</html>
+<script src="signUP.js"></script>
