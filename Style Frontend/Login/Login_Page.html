@@ -170,19 +170,18 @@
       S<span class="logo ele1">t</span><span class="logo ele2">y</span
       ><span class="logo ele3">l</span><span class="logo ele4">e</span>
     </div>
-    <form action="../Home Page/index.html">
+    <form id="form" action="../Home Page/index.html">
       <h2>Login to continue</h2>
-      <h5>Email address</h5>
+      <h5>Phone Number</h5>
       <div class="input-icons">
         <i class="fa-solid fa-at icon"></i>
         <input
           class="input-field"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Enter your Phone"
           required
-
         />
       </div>
       <h5 class="h5">Password</h5>
@@ -198,7 +197,7 @@
         />
       </div>
       <h3>forgot password?</h3>
-      <button type="submit" value="submit">Login Now</button>
+      <button onclick="handleLogin()" type="submit" value="submit">Login Now</button>
       <div class="signin">
         Don't have an account?
         <a href="../SignUP/SignUp.html"><span class="signup">SignUp</span></a>
@@ -209,3 +208,5 @@
     </div>
   </body>
 </html>
+
+<script src="login.js"></script>

@@ -43,15 +43,11 @@
     <div class="outerDiv">
       <h2>Enter Otp</h2>
       <input type="number" placeholder="Enter Otp" id="otp" required />
-      <button id="resendOtp">Resend Otp</button>
+      <button id="resendOtp" onclick="mynum()">Resend Otp</button>
       <button type="submit" onclick="handleSubmit()">Submit</button>
     </div>
   </body>
 </html>
-<script>
-  function handleSubmit() {
-    const otp = document.querySelector("#otp").value;
-    console.log(otp);
-    let userData = localStorage.getItem("userData");
-  }
+<script src="otp.js">
+ 
 </script>

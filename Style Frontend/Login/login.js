@@ -1,13 +1,10 @@
-async function mynum() {
+async function handleLogin() {
   event.preventDefault();
   let obj = {
-    firstName: form.firstName.value,
-    lastName: form.lastName.value,
     phone: "+91" + form.number.value,
     password: form.password.value,
-    email: form.email.value,
   };
-  let res = await fetch("https://style-backend-qtre.onrender.com/register", {
+  let res = await fetch("https://style-backend-qtre.onrender.com/login", {
     method: "POST",
     headers: {
       Accept: "application/json",
@@ -18,10 +15,9 @@ async function mynum() {
 
   let data = await res.json();
   if (data.status) {
-    localStorage.setItem("userData", JSON.stringify(obj));
-    window.location.href = "../verifyOtp/otp.html";
+    localStorage.setItem("authData", JSON.stringify(data.data));
+    window.location.href = "../HomePage/index.html";
   } else {
     alert(data.message);
-    window.location.reload();
   }
 }
