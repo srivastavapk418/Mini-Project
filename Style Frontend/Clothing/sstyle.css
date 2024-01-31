@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head_logo{
+    margin: 0;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    box-shadow: 1px 1px 1.8px 1px gray;
+}
+.head{
+    margin: 0px;
+    height: 300px;
+    width:100%;
+    background-color: rgb(252, 249, 249);
+    box-shadow: 1px 1px 2px 1px gray;
+
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+    height: 1800x;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgb(148, 251, 233),#e5ffe5,rgb(235, 255, 255),rgb(239, 200, 239),rgb(255, 210, 205),rgb(252, 236, 205),rgb(209, 209, 255),rgb(234, 204, 255),rgb(255, 162, 162));
+}
+.box{
+    margin: 20px;
+    height: 550px;
+    width: 320px;
+    border-radius: 2px;
+    background-color: rgb(245, 253, 255);
+    box-shadow: 1px 1px 2px 1px gray;
+    text-align: center;
+    
+}
+.box2:hover{
+     transform: scale(1.02,1.02);
+}
+
+.box2{
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 340px;
+    width: 280px;
+    background-size: cover;
+    align-items: center;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 2px 1px gray;
+}
+.clothes_block{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+.box_block{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.clothes_details{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-size-adjust: 10px;
+}
+.offer{
+    font-size: 20px;
+    color: rgb(2, 192, 78);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.clothes_brand_name{
+    margin-top: 10px;
+    align-items: center;
+}
+
