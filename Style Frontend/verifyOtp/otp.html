@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: "Times New Roman", Times, serif;
-      }
-      body {
-        background-color: #dff8f8;
-        height: 100vh;
-        max-height: 700px;
-        width: 100%;
-        background-image: url("../Images/image15.jpg");
-        background-size: contain;
-        background-repeat: space;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-      }
-      .outerDiv {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: sans-serif;           
-        }
-      #resendOtp {
-        color: red;
-        background-color: gray;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="outerDiv">
-      <h2>Enter Otp</h2>
-      <input type="number" placeholder="Enter Otp" id="otp" required />
-      <button id="resendOtp" onclick="mynum()">Resend Otp</button>
-      <button type="submit" onclick="handleSubmit()">Submit</button>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify OTP</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    body {
+      background-color: #dff8f8;
+      height: 100vh;
+      max-height: 700px;
+      width: 100%;
+      background-image: url("../Images/image15.jpg");
+      background-size: cover;
+      background-repeat: round;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .outerDiv {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    #resendOtp {
+      color: red;
+      background-color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outerDiv">
+    <h2>Enter OTP</h2>
+    <input type="number" placeholder="Enter Otp" id="otp" required />
+    <button id="resendOtp" onclick="mynum()">Resend Otp</button>
+    <button type="submit" onclick="handleSubmit()">Submit</button>
+  </div>
+</body>
+
 </html>
 <script src="otp.js">
- 
+
 </script>
