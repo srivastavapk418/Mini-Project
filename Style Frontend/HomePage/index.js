@@ -33,7 +33,7 @@ if (user && auth) {
   document.getElementById("logoutButton").innerText = "Logout";
 } else {
   document.getElementById("userName").innerText = "Login/SignUp";
-  document.getElementById("logoutButton").innerText = "offers";
+  document.getElementById("logoutButton").innerText = "";
 }
 async function handleSignIn() {
   const val = document.getElementById("userName").innerText;
@@ -41,3 +41,7 @@ async function handleSignIn() {
     window.location.href = "../Login/Login_Page.html";
   }
 }
+function topButton() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
