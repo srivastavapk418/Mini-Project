@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp02</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .outerDiv {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;           
+        }
+        form:hover {
+            border: 2px solid blue;
+        }
+        form {
+            border: 2px solid #bbb;
+            padding-top: 20px;
+            height: 500px;
+            width: 400px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 0px 20px rgba(0, 3, 35, 20);
+        }
+        input {
+            height: 22px;
+            width: 280px;
+            margin-top: 1px;
+            padding: 0 5px; 
+            border: 0.1px solid grey;
+            border-bottom: 1px solid black;
+            border-radius: 4px;    
+
+        }
+        button {
+            height: 34px;
+            width: 150px;
+            margin-top: 30px;
+            background-color: #000;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        } 
+        ::placeholder {
+            border: none;   
+        }
+        .innerDiv {
+            text-align: left;
+            margin-left: 45px;
+            margin-bottom: -6px;   
+        }
+        label {
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .container{
+            background-image: url("../Images/image15.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        #loading {
+            width: 2rem;
+            height: 2rem;
+            border: 5px solid #f3f3f3;
+            border-top: 6px solid #9c41f2;
+            border-radius: 100%;
+            margin: auto;
+            visibility: hidden;
+            animation: spin 1s infinite linear;
+        }
+        #loading.display {
+            visibility: visible;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="outerDiv">
+        <form action="https://www.google.com" id="form"><h2>SignUp</h2>
+        <div class="innerDiv"><label for="first name">First Name</label><br>
+        <input type="text" id="firstName" placeholder="First Name" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Last Name</label><br>
+        <input type="text" id="lastName" placeholder="Last Name" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Phone Number</label><br>
+        <input class="number" type="number" id="number" placeholder="Phone Number" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Email</label><br>
+        <input type="email" placeholder="Email" id="email" required="required"></div><br>
+        <div class="innerDiv"><label for="first name">Password</label><br>
+        <input type="password" placeholder="Create Password" id="password" required="required"></div><br>
+        <div><span style="font-size: small;" >Already a member?</span>  <a href="../Login/Login_Page.html" style="font-style: bold; font-family: serif;">Log In</a></span></div>
+        <button type="submit" onclick="mynum()">Submit</button><br>
+    </div>
+    </form>  
+    </div>
+</div>
+</body>
+</html>
+<script src="signUP.js"></script>
