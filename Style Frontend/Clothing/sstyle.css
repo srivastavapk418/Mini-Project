@@ -3,20 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-.head_logo{
-    margin: 0;
+.header_blog{
+    margin:0;
     padding: 10px;
+}
+.header_logo{
+    margin: 0px;
+    padding: 0px;;
     height: 300px;
     width: 100%;
-    box-shadow: 1px 1px 1.8px 1px gray;
+    background-image: url(image_mens/Header_image.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 1px 1px 8px 4px gray;
+    transition-duration: 0.5s;
 }
-.head{
-    margin: 0px;
-    height: 300px;
-    width:100%;
-    background-color: rgb(252, 249, 249);
-    box-shadow: 1px 1px 2px 1px gray;
-
+.header_logo:hover{
+    transform: scale(1.01,1.01);
 }
 .container{
     margin: 0px;
@@ -27,7 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: linear-gradient(rgb(148, 251, 233),#e5ffe5,rgb(235, 255, 255),rgb(239, 200, 239),rgb(255, 210, 205),rgb(252, 236, 205),rgb(209, 209, 255),rgb(234, 204, 255),rgb(255, 162, 162));
+    background-image: linear-gradient(rgb(148, 251, 233),rgb(235, 255, 255),rgb(239, 200, 239),rgb(255,210, 205),rgb(252, 236, 205),rgb(209, 209, 255),rgb(234, 204, 255),rgb(255, 162, 162));
 }
 .box{
     margin: 20px;
