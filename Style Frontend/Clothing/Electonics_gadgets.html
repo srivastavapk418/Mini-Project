@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    .slider-container {
+      margin: 0;
+      padding: 0;
+      height: 350px;
+      width: 100%;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 330px;
+    }
+    .laptop_acc{
+      height: 380px;
+      widows: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+    .laptop{
+      margin: 6px;
+      height: 360px;
+      width: 360px;
+      box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+      transition-duration: 0.5s;
+      
+    }
+    .laptop:hover{
+      transform: scale(1.02,1.02);
+    }
+    .laptop_image{
+      height: 360px;
+      width: 360px;
+    }
+
+    .laptop1{
+      height: 450px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .laptop2{
+      margin-top: 26px;
+      height: 390px;
+      width: 290px;
+      background-size: cover;
+    }
+    .laptop2_photo{
+      height: 390px;
+      width: 290px;
+    }
+    
+    .watch1{
+      height: 380px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .watch2{
+      margin: 6px;
+      height: 360px;
+      width: 360px;
+      box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+      transition-duration: 0.5s;
+    }
+    .watch2:hover{
+      transform: scale(1.02,1.01);
+    }
+    .watch_logo{
+      height: 360px;
+      width: 360px;
+    }
+    .watch3{
+      height: 450px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .watch4{
+      margin-top: 26px;
+      height: 390px;
+      width: 290px;
+    }
+    .watch4_photo{
+      height: 390px;
+      width: 290px;
+    }
+    .tab{
+      height: 380px;
+      widows: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .tab1{
+      margin: 6px;
+      height: 360px;
+      width: 360px;
+      box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+      transition-duration: 0.5s;
+    }
+    .tab1:hover{
+      transform: scale(1.02,1.01);
+    }
+    .tab_logo{
+      height: 360px;
+      width: 360px;
+    }
+    .tab2{
+      height: 450px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .tab3{
+      margin-top: 26px;
+      height: 390px;
+      width: 290px;
+    }
+    .tab3_photo{
+      height: 390px;
+      width: 290px;
+    }
+    .earphones{
+      height: 380px;
+      widows: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .earphones1{
+      margin: 6px;
+      height: 360px;
+      width: 360px;
+      box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+      transition-duration: 0.5s;
+    }
+    .earphones1:hover{
+      transform: scale(1.02,1.01);
+    }
+    .bud_logo{
+      height: 360px;
+      width: 360px;
+    }
+    .earphones2{
+      height: 450px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+      transition-duration: 0.5s;
+    }
+    .earphones3{
+      margin-top: 26px;
+      height: 390px;
+      width: 290px;
+    }
+    .earphone3_photo{
+    
+      height: 390px;
+      width: 290px;
+    }
+    .camera{
+      margin: 6px;
+      height: 370px;
+      widows: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+   .camera1{
+    margin: 6px;
+      height: 360px;
+      width: 360px;
+      box-shadow: 2px 2px 8px 1px rgb(0, 0, 0);
+      transition-duration: 0.5s;
+   }
+   .camera1:hover{
+    transform: scale(1.02,1.01);
+   }
+   .camera_logo{
+    height: 360px;
+      width: 360px;
+   }
+   .camera2{
+    height: 450px;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      justify-content: space-evenly;
+   }
+   .camera3_photo{
+    margin-top: 26px;
+    height: 390px;
+      width: 290px;
+   }
+  </style>
+</head>
+<body>
+
+<div class="slider-container">
+  <a href="$"><div class="slider">
+    <img src="image_mens/slider1.gif" alt="Image 1">
+    <img src="image_mens/slider2.png" alt="Image 2">
+    <img src="image_mens/slider3.jpg" alt="Image 3">
+    <img src="image_mens/slider4.jpg" alt="Image 4">
+  </div></a>
+</div>
+<div class="laptop_acc">
+  <div class="laptop">
+    <img src="image_mens/laptop1.jpg" alt="" class="laptop_image">
+  </div>
+  <div class="laptop" >
+    <img src="image_mens/laptop2.jpg" alt="" class="laptop_image">
+  </div>
+  <div class="laptop" >
+    <img src="image_mens/laptop3.jpg" alt="" class="laptop_image">
+  </div>
+  <div class="laptop">
+    <img src="image_mens/laptop4.jpg" alt="" class="laptop_image">
+  </div>
+</div>
+<div class="laptop1">
+  <a href="7"><div class="laptop2">
+    <img src="image_mens/laptopimage1.png" alt="" class="laptop2_photo">
+  </div></a>
+  <div class="laptop2">
+    <img src="image_mens/laptopimage2.png" alt="" class="laptop2_photo">
+  </div>
+  <div class="laptop2">
+    <img src="image_mens/laptopimage3.png" alt="" class="laptop2_photo">
+  </div>
+  <div class="laptop2">
+    <img src="image_mens/laptopimage4.png" alt="" class="laptop2_photo">
+  </div>
+  <div class="laptop2">
+    <img src="image_mens/laptopimage5.png" alt="" class="laptop2_photo">
+  </div>
+ </div>
+<div class="watch1">
+    <div class="watch2">
+      <img src="image_mens/watch1.gif" alt="" class="watch_logo">
+    </div>
+    <div class="watch2">
+      <img src="image_mens/watch2_3.gif" alt="" class="watch_logo">
+    </div>
+    <div class="watch2">
+      <img src="image_mens/watch3.gif" alt="" class="watch_logo">
+    </div>
+    <div class="watch2">
+      <img src="image_mens/watch4.gif" alt="" class="watch_logo">
+    </div>
+</div>
+<div class="watch3">
+  <div class="watch4">
+    <img src="image_mens/watchphoto1.png" alt="" class="watch4_photo">
+  </div>
+  <div class="watch4">
+    <img src="image_mens/watchphoto2.png" alt="" class="watch4_photo">
+  </div>
+  <div class="watch4">
+    <img src="image_mens/watchphoto3.png" alt="" class="watch4_photo">
+  </div>
+  <div class="watch4">
+    <img src="image_mens/watchphoto4.png" alt="" class="watch4_photo">
+  </div>
+  <div class="watch4">
+    <img src="image_mens/watchphoto5.png" alt="" class="watch4_photo">
+  </div>
+</div>
+<div class="tab">
+  <div class="tab1">
+    <img src="image_mens/tab1.png" alt="" class="tab_logo">
+  </div>
+  <div class="tab1">
+    <img src="image_mens/tab2.jpg" alt="" class="tab_logo">
+  </div>
+  <div class="tab1">
+    <img src="image_mens/tab4.png" alt="" class="tab_logo">
+  </div>
+  <div class="tab1">
+    <img src="image_mens/tab5.jpg" alt="" class="tab_logo">
+  </div>
+</div>
+<div class="tab2">
+  <div class="tab3">
+    <img src="image_mens/tablet1.png" alt="" class="tab3_photo">
+  </div>
+  <div class="tab3">
+    <img src="image_mens/tablet2.png" alt=""  class="tab3_photo">
+  </div>
+  <div class="tab3">
+    <img src="image_mens/tablet3.png" alt=""  class="tab3_photo">
+  </div>
+  <div class="tab3">
+    <img src="image_mens/tablet4.png" alt=""  class="tab3_photo">
+  </div>
+  <div class="tab3">
+    <img src="image_mens/tablet5.png" alt=""  class="tab3_photo">
+  </div>
+</div>
+<div class="earphones">
+  <div class="earphones1">
+    <img src="image_mens/bud5.gif" alt="" class="bud_logo">
+  </div>
+  <div class="earphones1">
+    <img src="image_mens/bud2.jpg" alt="" class="bud_logo">
+  </div>
+  <div class="earphones1">
+    <img src="image_mens/bud3.png" alt="" class="bud_logo">
+  </div>
+  <div class="earphones1">
+    <img src="image_mens/bud4.gif" alt="" class="bud_logo">
+  </div>
+</div>
+<div class="earphones2">
+  <div class="earphones3">
+    <img src="image_mens/earphone1.png" alt="" class="earphone3_photo">
+  </div>
+  <div class="earphones3">
+    <img src="image_mens/earphone2.jpg" alt="" class="earphone3_photo">
+  </div>
+  <div class="earphones3">
+    <img src="image_mens/earphone3.png" alt="" class="earphone3_photo">
+  </div>
+  <div class="earphones3">
+    <img src="image_mens/earphone4.png" alt="" class="earphone3_photo">
+  </div>
+  <div class="earphones3">
+    <img src="image_mens/earphone5.png" alt="" class="earphone3_photo">
+  </div>
+</div>
+<div class="camera">
+  <div class="camera1">
+    <img src="image_mens/camera1.jpg" alt="" class="camera_logo">
+  </div>
+  <div class="camera1">
+    <img src="image_mens/camera2.jpg" alt=""  class="camera_logo">
+  </div>
+  <div class="camera1">
+    <img src="image_mens/camera3.png" alt=""  class="camera_logo">
+  </div>
+  <div class="camera1">
+    <img src="image_mens/camera4.gif" alt="" class="camera_logo">
+  </div>
+</div>
+<div class="camera2">
+  <div class="camera3">
+    <img src="image_mens/cameraphoto1.jpg" alt="" class="camera3_photo">
+  </div>
+  <div class="camera3">
+    <img src="image_mens/cameraphoto2.png" alt="" class="camera3_photo">
+  </div>
+  <div class="camera3">
+    <img src="image_mens/cameraphoto3.png" alt="" class="camera3_photo">
+  </div>
+  <div class="camera3">
+    <img src="image_mens/cameraphoto4.png" alt="" class="camera3_photo">
+  </div>
+  <div class="camera3">
+    <img src="image_mens/cameraphoto5.png" alt="" class="camera3_photo">
+  </div>
+</div>
+
+<script>
+  const slider = document.querySelector('.slider');
+  let counter = 1;
+
+  setInterval(() => {
+    slider.style.transition = 'transform 0.3s ease-in-out';
+    slider.style.transform = `translateX(${-counter * 100}%)`;
+
+    counter++;
+
+    if (counter === 5) {
+      setTimeout(() => {
+        slider.style.transition = 'none';
+        slider.style.transform = 'translateX(-100%)';
+        counter = 1;
+      }, 500);
+    }
+  }, 3000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;
+
+} 
+.head{
+  height: 3350px;
+  width: 100%;
+  background-color:rgb(230, 255, 255);
+  flex-wrap: wrap;
+}
+.slideshow-container {
+  height: 530px;
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  line-height: 0%;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.blog{
+  margin:0px;
+  padding: 0;
+  height: 450px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+
+}
+.blog_photo{
+  padding-left: 0.7%;
+  padding-top: 8%;
+  line-height: 0%;
+  margin: 0px;
+  margin: 0px;
+  height: 430px;
+  width: 48%;
+  background-size: cover;
+  box-shadow: 2px 2px 8px 1px rgb(78, 76, 76);
+  transition-duration: 0.4s;
+}
+.blog_photo:hover{
+  transform: scale(1.02,1.02);
+}
+.collection{
+margin:8px;
+padding: 0px;
+height:540px;
+width: 100%;
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+.blog2{
+  
+  padding: 10px;
+  height: 530px;
+  width: 490px;
+  background-color: rgb(250, 250, 252);
+  box-shadow: 2px 2px 8px 1px gray;
+
+
+}
+.clothes{
+  padding: 0px;
+  text-align: center;
+  height: 380px;
+  width: 460px;
+  justify-content: center;
+  background-size: cover;
+  transition-duration: 0.5s;
+}
+.clothes:hover{
+  transform: scale(1.03,1.03);
+}
+.womens_clothes{
+  margin: 0px;
+  padding: 0px;
+  height: 1800x;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.clothes2{
+  padding: 1px;
+  flex-wrap: wrap;
+  margin: 20px;
+  height: 600px;
+  width: 335px;
+  text-align: center;
+  line-height: 0.4cm;
+  background-color: rgb(252, 255, 255);
+  box-shadow: 2px 2px 8px 1px gray;
+}
+.womens_clothes1{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes1:hover{
+ content: url(image_mens/product_01b.jpg);
+}
+.womens_clothes2{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes2:hover{
+  content: url(image_mens/product_02b.jpg);
+}
+.womens_clothes3{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes3:hover{
+  content: url(image_mens/product_03b.jpg);
+}
+.womens_clothes4{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes4:hover{
+  content: url(image_mens/product_04b.jpg);
+}
+.womens_clothes5{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes5:hover{
+  content: url(image_mens/product_05b.jpg);
+
+}
+.womens_clothes6{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes6:hover{
+ content: url(image_mens/product_06b.jpg);
+}
+.womens_clothes7{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes7:hover{
+  content: url(image_mens/product_07b.jpg);
+}
+.womens_clothes8{
+  margin: 8px;
+  height: 450px;
+  width: 320px;
+  border-radius: 2px;
+  background-color: rgb(13, 149, 183);
+  text-align: center;
+  background-size: cover;
+}
+.womens_clothes8:hover{
+ content: url(image_mens/product_08b.jpg);
+}
+.banner{
+  height: 500px;
+  width: 100%;
+  background-color: rgb(128, 185, 185);
+  background-size:cover;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.banner1{
+height: 500px;
+width: 58.02%;
+background-color: rgb(128, 185, 185); 
+padding-left: 220px;
+padding-top: 100px;
+font-size: 80px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.banner2{
+ 
+ height: 500px;
+ width: 570px;
+ background-size: cover;
+ background-color: rgb(128, 185, 185);
+ 
+
+}
+.btn7{
+   height: 50px;
+   width: 250px; 
+   background-color: transparent; 
+   font-size: 25px;
+   border: 2px solid black; 
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; box-shadow: 1px 1px 5px 0px black;
+}
+.btn7:hover{
+  color:rgb(129, 170, 179);;
+  background-color:white;
+  border: 3px solid rgb(129, 170, 179);;
+}
+.btn5{
+  height: 50px;
+  width: 230px;
+  color: white; 
+  box-shadow: 2px 2px 6px 1px rgb(255, 162, 56);
+  background-color: transparent;
+  font-size: 25px; 
+  border: 3px solid white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+}
+.btn5:hover{
+  color: rgb(252, 153, 5);
+  background-color:white;
+  border: 3px solid rgb(252, 153, 5);
+}
+.btn4{
+  height: 50px; 
+  width: 230px; 
+  color: white; 
+  box-shadow: 2px 2px 6px 1px rgb(29, 27, 26); 
+  background-color: transparent; 
+  font-size: 25px; 
+  border: 3px solid white; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn4:hover{
+  color: rgb(112, 109, 109);
+  background-color: white;
+  border: 3px solid rgb(112, 109, 109);
+}
+.btn6{
+  height: 50px; 
+  width: 230px; 
+  color: rgb(5, 5, 5);  
+  background-color:transparent; 
+  font-size: 25px; 
+  margin-left: 59%;
+  border: 3px solid rgb(6, 5, 5); 
+  font-family:serif;
+  box-shadow: 2px 2px 6px 1px rgb(29, 27, 26);
+}
+.btn6:hover{
+  color: rgb(244, 246, 248); 
+  background-color: rgba(255, 65, 65, 0.943);
+  border: 3px white solid;
+}
+
+
+
+</style>
+</head>
+<body>
+<main class="head">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext" style="background-image: url(image_mens/slider_01.jpg);">
+    <img src="image_mens/brand10.png" alt="" style="height: 100px; width: 200px; margin-left: 12%; margin-top: 70px;" >
+    <img src="image_mens/brand9.png" alt="" style="height: 100px; width: 200px; margin-left: 48%; margin-top: 70px;">
+    <img src="image_mens/brand2.png" alt="" style="height: 100px; width: 200px; margin-left: 12%;">
+    <img src="image_mens/brand4.png" alt="" style="height: 100px; width: 200px; margin-left: 48%;">
+    <img src="image_mens/brand8.png" alt="" style="height: 100px; width: 200px; margin-left: 12%;">
+    <img src="image_mens/brand7.png" alt="" style="height: 100px; width: 200px; margin-left: 48%;">
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext" style="background-image: url(image_mens/slider_02.jpg);">
+    <h1 style="font-weight:400; padding-left: 49%; font-family:serif; font-size: 90px; color: rgb(250, 55, 55); text-shadow: 2px 2px 5px gray; padding-top: 5%; text-align:center; ">Sale 20% off</h1>
+    <p style="font-size: 70px; text-align:center; padding-left: 55%; text-shadow: 2px 2px 8px rgb(100, 100, 98); font-weight: 600; color: rgb(7, 7, 7);">On everything</p> 
+    <p style="color: black; font-size: 35px; text-align: center;padding-left:46%;">CLASSIC ETHINICWEAR</p>
+    <button class="btn6">SHOP NOW</button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext" style="background-image: url(image_mens/slider_03.jpg);">
+ <img src="image_mens/brand6.png" alt="" style="height: 150px;width: 200px; margin-left: 34%; margin-top: 13%;">
+<img src="image_mens/brand5.png" alt="" style="height: 150px;width: 300px; margin-top: 11%; margin-left: 0%;"></div>
+  <div class="text">Caption Three</div>
+</div>
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div class="collection">
+  <a href="$" style="text-decoration: none; color: black;"><div class="blog2"><div class="clothes" style="background-image: url(image_mens/guide_01.png);"></div>
+  <p style="text-align: center; font-size: 20px; font-weight: bolder;">FUNDAY FASHION</p><p style="text-align: center;">Khhalisi Hoodie Warm Fabric Loose Fit Soft with Pockets Hoodies for Women Sweatshirt Lightweight Hoodie</p></div></a>
+  <a href="%"  style="text-decoration: none; color: black;"><div class="blog2"><div class="clothes" style="background-image: url(image_mens/guide_02.png);"></div><p style="text-align: center; font-size: 20px; font-weight: bolder;">FUNDAY FASHION</p><p style="text-align: center;">TROND Women's Round Neck Full Sleeve Loos Fit Hooded/Hoodie Sweatshirt for Women</p></div></a>
+  <a href="%"  style="text-decoration: none; color: black;"><div class="blog2"><div class="clothes" style="background-image: url(image_mens/guide_03.png);"></div><p style="text-align: center; font-size: 20px; font-weight: bolder;">ROYALICA</p><p style="text-align: center;"> Women and Girls White Geo Print Fancy Women Formal Shirt | Shirts for Women Stylish Western</p></div></a>
+</div>
+
+<div class="blog">
+  <div class="blog_photo" style="background-image: url(image_mens/b17.jpg);">
+  <h1 style="font-weight: 400; color: white; text-shadow: 2px 2px 5px gray;">crazy deals!</h1>
+  <p style="font-size: 50px; text-shadow: 2px 2px 8px rgb(100, 100, 98); font-weight: 600; color: white;">Buy 1 get 1 free</p>
+  <button class="btn5">LEARN MORE</button>
+  </div>
+  <div class="blog_photo" style="background-image: url(image_mens/b10.jpg);">
+    <h1 style="font-weight: 400; color: white; text-shadow: 2px 2px 5px gray;">Spring/Summer</h1>
+    <p style="font-size: 50px; text-shadow: 2px 2px 8px rgb(100, 100, 98); font-weight: 600; color: white;">Upcoming seasons..</p>
+    <p style="color: white; font-size: 28px;">The best classic dress is on sale at GlobeHub</p>
+    <button class="btn4">COLLECTION</button>
+  </div>
+</div>
+<div class="womens_clothes">
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes1" style="background-image: url(image_mens/product_01.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">TOKYO TALKIES</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;499</p></div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes2" style="background-image: url(image_mens/product_02.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">ROADSTER</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;599</div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes3" style="background-image: url(image_mens/product_03.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">MADAME</pstyle=><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;699</div></a>
+   <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes4" style="background-image: url(image_mens/product_04.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">H&Ms</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;799</div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes5" style="background-image: url(image_mens/product_05.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">THE SOULED STORE</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;659</div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes6" style="background-image: url(image_mens/product_06.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">JUNEBERRY</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;889</div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes7" style="background-image: url(image_mens/product_07.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">ROADSTER</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;999</div></a>
+  <a href="%" style="text-decoration: none;"><div class="clothes2" style="color: black;"><div class="womens_clothes8" style="background-image: url(image_mens/product_08.jpg);"></div><p style="font-weight:900; font-size: 23px; font-family:Arial, Helvetica, sans-serif;">TOKYO TALKIES</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </p><p style="color: black; font-weight: bold;">From &#x20B9;639</div></a>
+</div>
+<a href="#" style="text-decoration: none; color: black;"><div class="banner">
+  <div class="banner1"><p style="margin: 0; padding: 0; text-shadow: 3px 3px 5px rgb(37, 35, 35);">Get ready! <br>Winter is coming....</p>
+  <button class="btn7">GO GET IT</button></div>
+  <div class="banner2" style="background-image: url(image_mens/banner.png);"></div>
+
+  <div class="banner_photo" ></div>
+</div></a>
+</main>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
