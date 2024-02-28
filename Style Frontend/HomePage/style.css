@@ -14,6 +14,14 @@ header{
   width: 100%;
 }
 #logo{
+  height: 100%;
+  width: auto;
+}
+#logo img{
+  height: 80%;
+  width: auto;
+}
+/* #logo{
 font-size: 28px;
 font-family: fantasy;
 color: gold;
@@ -38,7 +46,7 @@ color: gold;
 .ele4{
   color: lightpink;
   font-size: 32px;
-}
+} */
 #header1{
   height: 60px;
   width: 100%;
@@ -46,7 +54,8 @@ color: gold;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  background-color: rgb(18, 123, 39);
+  background-color: rgb(109, 233, 134);
+  /* background-color: rgb(18, 123, 39); */
 }
 #header2{
   height: 40px;
@@ -96,7 +105,9 @@ a{
   font-size: 18px;
 }
 .head-a {
-  color: white;
+  color: black;
+  font-weight: 500;
+  /* color: white; */
 }
 .fa-cart-shopping{
   font-size: 20px;
@@ -232,7 +243,7 @@ a{
 /* media querry for screen max 849px */
 
 @media only screen and (max-width: 850px){   /*for tablet*/
-  #logo{
+  /* #logo{
     font-size: 3.3vw;
 }
   .ele1{
@@ -246,7 +257,7 @@ a{
 }
   .ele4{
     font-size: 3.6vw;
-}
+} */
   #header1{
     height: 7vw;
 }
